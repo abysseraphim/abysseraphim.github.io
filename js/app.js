@@ -1,4 +1,4 @@
-// ── ROUTER ──────────────────────────────────────────────
+// ── ROUTER ──
 function getRoute() {
   return location.hash.replace('#', '') || 'home';
 }
@@ -25,7 +25,7 @@ window.addEventListener('hashchange', navigate);
 window.addEventListener('DOMContentLoaded', navigate);
 
 
-// ── TYPEWRITER ──────────────────────────────────────────
+// ── TYPEWRITER ──
 function typewriter(el, text) {
   el.textContent = '';
   let i = 0;
